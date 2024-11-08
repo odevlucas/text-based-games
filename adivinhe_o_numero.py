@@ -1,11 +1,15 @@
 import random
 
 def jogar():
-    print("Vamos brincar! Você dirá um intervalo de número, eu escolherei um número nesse intervalo e você tentará adivinhar qual número escolhi")
-    print("Solicitarei o intervalo para você, por ex: De 1 a 10")
+    tutorial = f"""
+    Vamos brincar de adivinhar o número!
+    Você dirá um intervalo de número, eu escolherei um número nesse intervalo e você tentará adivinhar qual número escolhi.
+    Solicitarei o intervalo para você, por ex: De 1 a 10
+    """
+    print(tutorial)
 
-    valor_inicial = int(input("Insira o valor inicial: "))
-    valor_final = int(input("Insira o valor final: "))
+    valor_inicial = int(input("Insira o valor inicial (Ex: 1): "))
+    valor_final = int(input("Insira o valor final (Ex: 10): "))
 
     numero_aleatorio = random.randint(valor_inicial, valor_final)
 
